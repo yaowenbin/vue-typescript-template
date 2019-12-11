@@ -1,0 +1,72 @@
+/* Global scss */
+body,
+html {
+  // AlloyTeam : https://github.com/AlloyTeam/Mars/blob/master/solutions/font-family.md
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC",
+    "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a,
+a:focus,
+a:hover {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+// 滚动条的宽度(渐近增加)
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+// 滚动条的滑块
+::-webkit-scrollbar-thumb {
+  background-color: rgba(144, 147, 153, 0.3);
+  border-radius: 3px;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.link-type {
+  @include link;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+label {
+  font-weight: 700;
+}
+
+[v-cloak] {
+  display: none;
+}
